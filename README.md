@@ -22,3 +22,18 @@ classification model and rank the resume giving employers the flexibility to
 see all the highranked resume on top and making their way from there to
 the bottom.
 </p>
+
+<hr>
+
+## [Dataset Available at:]([https://www.ibm.com/in-en/topics/what-is-blockchain](https://drive.google.com/drive/folders/1QDAFPLKGAJNWDsAD_SsCCsRokkyttL-s?usp=sharing)) 
+Resume_train_data.txt/ Resume_train_data.pkl (pickle format to preserve the
+data structure) and UpdatedResumeDataSet.csv and Alicia Clark Resume are used.
+We will be using a database of around 200 entries in pickle format and 300
+resume in csv format here to train our model and then load it to extract
+information from any pdf/doc for the result testing.In this data, there are different
+tuples in the form of dictionaries which assign labels (NER) to groups of tokens
+which are contiguous. It provides a default model which can recognize a wide
+range of named or numerical entities, which include company-name, location and
+organization.
+## Flowchart:
+![image](https://user-images.githubusercontent.com/62128029/187261649-0924a67b-b204-47f6-90d3-5f6dd26cbde3.png)
