@@ -6,27 +6,25 @@ In today's fast-paced recruiting landscape, time is of the essence. This Resume 
 
 ## Key Features of the Resume Parser:
 
-- Document Preprocessing: The initial step involves converting resumes into a standardized text format. This ensures uniformity of data, making it ready for analysis.
+- **Document Preprocessing**: The initial step involves converting resumes into a standardized text format. This ensures uniformity of data, making it ready for analysis.
 
-- Custom Named Entity Recognition (NER): Customization is taken to the next level by constructing a tailored NER model using SpaCy. This model is trained to recognize and categorize specific attributes within resumes, such as skills, experiences, and qualifications.
+- **Custom Named Entity Recognition (NER)**: Customization is taken to the next level by constructing a tailored NER model using SpaCy. This model is trained to recognize and categorize specific attributes within resumes, such as skills, experiences, and qualifications.
 
-- Attribute Labeling: The NER model labels each piece of information within the resume, associating it with a relevant attribute. This offers recruiters a clear and organized view of candidates' qualifications.
+- **Attribute Labeling**: The NER model labels each piece of information within the resume, associating it with a relevant attribute. This offers recruiters a clear and organized view of candidates' qualifications.
 
-- Parts of Speech Analysis: In addition to attribute labeling, the system analyzes the parts of speech within the resume text. This advanced feature enhances the parser's contextual understanding and enhances its capabilities.
+- **Parts of Speech Analysis**: In addition to attribute labeling, the system analyzes the parts of speech within the resume text. This advanced feature enhances the parser's contextual understanding and enhances its capabilities.
 
-- Multiclass Classification: To further assist recruiters, TF-IDF (Term Frequency-Inverse Document Frequency) and cosine similarity techniques are employed to build a multiclass classification model. This model ranks resumes based on their relevance to the job posting, ensuring that the most suitable candidates are prioritized.
+- **Multiclass Classification**: To further assist recruiters, TF-IDF (Term Frequency-Inverse Document Frequency) and cosine similarity techniques are employed to build a multiclass classification model. This model ranks resumes based on their relevance to the job posting, ensuring that the most suitable candidates are prioritized.
 
 ## Dataset:
 [Dataset Available at:](https://drive.google.com/drive/folders/1QDAFPLKGAJNWDsAD_SsCCsRokkyttL-s?usp=sharing)
-Resume_train_data.txt/ Resume_train_data.pkl (pickle format to preserve the
-data structure) and UpdatedResumeDataSet.csv and Alicia Clark Resume are used.
-We will be using a database of around 200 entries in pickle format and 300
-resume in csv format here to train our model and then load it to extract
-information from any pdf/doc for the result testing.In this data, there are different
-tuples in the form of dictionaries which assign labels (NER) to groups of tokens
-which are contiguous. It provides a default model which can recognize a wide
-range of named or numerical entities, which include company-name, location and
-organization.
+- **Dataset Overview:** Our training dataset comprises approximately 200 entries in pickle format ("Resume_train_data.pkl") and 300 resumes in CSV format ("UpdatedResumeDataSet.csv"). These datasets serve as the foundation for training our model.
+
+- **Training and Testing**: We use the pickle dataset to train our model, allowing it to learn from the labeled data. This trained model can then be applied to extract information from resumes in PDF or DOC format, facilitating result testing and resume parsing.
+
+- **Named Entity Recognition (NER)**: Within the training data, we represent information using tuples in the form of dictionaries. These dictionaries assign labels to groups of tokens that are contiguous within the resumes. The NER labels are diverse and encompass a wide range of named or numerical entities, including but not limited to company names, locations, and organizations.
+
+- **Default Model**: Our project incorporates a default NER model that is capable of recognizing a broad spectrum of named or numerical entities. This model is instrumental in identifying and categorizing critical information within the resumes.
 ## Flowchart:
 ![image](https://user-images.githubusercontent.com/62128029/187261649-0924a67b-b204-47f6-90d3-5f6dd26cbde3.png)
 
