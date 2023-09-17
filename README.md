@@ -25,7 +25,7 @@ the bottom.
 
 <hr>
 
-## [Dataset Available at:]([https://www.ibm.com/in-en/topics/what-is-blockchain](https://drive.google.com/drive/folders/1QDAFPLKGAJNWDsAD_SsCCsRokkyttL-s?usp=sharing)) 
+## [Dataset Available at:](https://drive.google.com/drive/folders/1QDAFPLKGAJNWDsAD_SsCCsRokkyttL-s?usp=sharing)
 Resume_train_data.txt/ Resume_train_data.pkl (pickle format to preserve the
 data structure) and UpdatedResumeDataSet.csv and Alicia Clark Resume are used.
 We will be using a database of around 200 entries in pickle format and 300
